@@ -1,16 +1,7 @@
-tbody {
-  display: flex;
-  justify-content: space-between;
-}
-
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -24,27 +15,30 @@ tbody {
   z-index: -1;
 }
 .logo {
-
+  width: 228px;
+  height: 32px;
 }
 
 .logo_place_header {
-position: absolute;
-top: 30px;
-left: 64px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  background-image: url(../images/logo_place_header.svg);
+  z-index: 2;
 }
 
 .logo_place_footer {
-
+  background-image: url(../images/.logo_place_footer);
 }
 
 .header__title {
-position: relative;
-margin: auto 64px;
-width: 730px;
-font-size: 102px;
-font-weight: 600;
-line-height: 96px;
-z-index: 2;
+  position: relative;
+  margin: auto 64px;
+  width: 730px;
+  font-size: 102px;
+  font-weight: 600;
+  line-height: 96px;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -59,7 +53,7 @@ z-index: 2;
 }
 
 .header__link {
-color: #2f80ed;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -80,21 +74,11 @@ color: #2f80ed;
   background-color: #2f80ed;
   z-index: 0;
 }
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 .content {
-display: flex;
-position: relative;
-flex-direction: column;
+  display: flex;
+  position: relative;
+  flex-direction: column;
 }
 
 .content__description {
@@ -111,9 +95,9 @@ flex-direction: column;
 }
 
 .content__brief {
- position: relative;
-top: 10px;
-color: #2f80ed;
+  position: relative;
+  top: 10px;
+  color: #2f80ed;
   display: flex;
   width: 175px;
   font-size: 18px;
@@ -122,15 +106,21 @@ color: #2f80ed;
 }
 
 .content__main-text {
-width: 80%;
-min-width: 784px;
-justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  min-width: 784px;
+  
 }
 
 .content__paragraph {
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .span-accent {
@@ -148,14 +138,14 @@ justify-content: space-between;
 }
 
 .digits__title {
-width: 60%;
-font-size: 60px;
-font-weight: 600;
-line-height: 1.15;
-display: flex;
-justify-content: center;
-margin: 0;
-padding-top: 100px;
+  width: 60%;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 100px;
 }
 
 .digits__subtitle {
@@ -164,16 +154,31 @@ padding-top: 100px;
   font-weight: normal;
   line-height: 34px;
   display: flex;
-justify-content: center;
-margin: 0;
-padding-top: 20px;
+  justify-content: center;
+  margin: 0;
+  padding-top: 20px;
 }
 
-.digits__table {
-width: 1100px;
-display: flex;
-flex-direction: column;
+.table {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
 }
+
+.table_theme_white {
+
+}
+.digits__table {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.table__body {
+  display: flex;
+  justify-content: space-between;
+}
+
 .table__cell {
   flex-direction: column;
   display: flex;
@@ -259,6 +264,7 @@ flex-direction: column;
   align-items: center;
   background-color: #1f1f1f;
   z-index: -2;
+  overflow: hidden;
 }
 
 .kaufman__title {
@@ -284,19 +290,15 @@ padding-top: 20px;
 }
 
 .kaufman__title_theme_dark {
-  width: 200px;
   color: white;
 }
 
 .kaufman__subtitle_theme_dark {
-  width: 200px;
   color: white;
 }
 
-.kaufman__table_theme_dark {
-  width: 1100px;
-  display: flex;
-  flex-direction: column;
+.table_theme_dark {
+
 }
 
 .table__cell_theme_dark {
@@ -316,7 +318,8 @@ padding-top: 20px;
 background-image: url(../images/kaufman-triangle.svg);
 z-index: -1;
 position: absolute;
-overflow:hidden;
+width: 877px;
+height: 877px;
 top: 0px;
 right: -210px;
 }
