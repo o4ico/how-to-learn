@@ -79,7 +79,6 @@
   display: flex;
   justify-content: center;
   padding: 100px 0;
-  border: 1px solid rebeccapurple;
 }
 
 .content__two-columns {
@@ -127,7 +126,6 @@
 .content__digits {
   display: flex;
   flex-direction: column;
-  border: 1px solid rebeccapurple;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -179,7 +177,6 @@
 .table__cell {
   flex-direction: column;
   display: flex;
-  border: 1px solid rebeccapurple;
   justify-content: flex-start;
 }
 
@@ -194,7 +191,6 @@
   line-height: 1.15;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid rebeccapurple;
   margin-top: 20px;
 }
 
@@ -203,7 +199,6 @@
   font-weight: 600;
   line-height: 1.15;
   display: flex;
-  border: 1px solid rebeccapurple;
   justify-content: start;
   margin: 0;
   
@@ -215,7 +210,6 @@
   background-size: 867px 637px;
   background-position: left bottom;
   background-repeat: no-repeat;
-  border: 1px solid rebeccapurple;
   position: relative;
   flex-direction: column;
   margin: 0;
@@ -256,7 +250,6 @@
 .content__kaufman {
   display: flex;
   flex-direction: column;
-  border: 1px solid rebeccapurple;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -335,46 +328,47 @@ right: -210px;
 .footer__column {
   flex-direction: column;
   color: white;
-  border: 1px solid rebeccapurple;
 }
 
 .footer__columns {
   justify-content: space-between;
   display: flex;
   width: 90%;
-  border: 1px solid rebeccapurple;
 }
 
 .column_content_copyright {
   flex-basis: 711px;
   display: flex;
-  border: 1px solid rebeccapurple;
+  justify-content: space-between;
 }
 
 
 .logo_place_footer {
-  background-image: url(../images/.logo_place_footer);
+  background-image: url(../images/logo_place_footer.svg);
   z-index: 1;
 }
 
 .footer__author {
-
+  padding: 18px 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
 }
 
 .column_content_info {
 
   display: flex;
-  border: 1px solid rebeccapurple;
 }
 
 .column_content_social {
 
   display: flex;
-  border: 1px solid rebeccapurple;
 }
 
 .footer__column-heading {
-
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
 }
 
 .footer__column-links {
@@ -382,11 +376,13 @@ right: -210px;
 }
 
 .footer__social-icon {
-
+padding-right: 10px;
 }
 
 .footer__column-link {
-
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
 }
 
 
