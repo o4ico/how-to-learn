@@ -323,11 +323,12 @@ right: -210px;
   background-color: #1f1f1f;
   z-index: -2;
   padding: 60px 0 40px;
+  color: white;
 }
 
 .footer__column {
   flex-direction: column;
-  color: white;
+  
 }
 
 .footer__columns {
@@ -356,12 +357,10 @@ right: -210px;
 }
 
 .column_content_info {
-
   display: flex;
 }
 
 .column_content_social {
-
   display: flex;
 }
 
@@ -372,7 +371,9 @@ right: -210px;
 }
 
 .footer__column-links {
- padding: 20px 0 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 16px;
 }
 
 .footer__social-icon {
@@ -383,7 +384,6 @@ padding-right: 10px;
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
+  text-decoration: none;
+  color: white;
 }
-
-
-
