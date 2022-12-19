@@ -1,0 +1,11 @@
+.feynman {
+    display: flex;
+    min-height: 890px;
+    background:#f2f2f2 url(../../images/feynman.png) left bottom no-repeat;
+    background-size: 867px 637px;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    box-sizing: border-box;
+  }
