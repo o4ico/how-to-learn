@@ -4,11 +4,12 @@
     font-size: 30px;
     font-weight: normal;
     line-height: 42px;
-    padding-left: 48px;
     margin: 0;
+    margin-left: 48px;
+    transition: 300ms;
+    align-self: flex-start;
   }
 
   .khan__buy-link:hover {
     opacity: 0.7;
-    transition: 300ms;
   }
